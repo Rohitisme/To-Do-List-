@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.bg{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(150deg, rgb(117, 255, 115) , rgb(0, 157, 16), rgb(10, 82, 0));
+    padding: 10px;
+}
+
+.box{
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    margin: 100px auto 0;
+    
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    position: relative;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.type{
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    background-color: rgb(234, 234, 234);
+    border-radius: 30px;
+}
+
+#input-box{
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    display: flex;
+    padding-left: 10px;
+    flex: 1;
+    background: transparent;
+}
+
+button{
+    height: 60px;
+    width: 100px;
+    border-radius: 30px;
+    vertical-align: middle;
+    color: black;
+    background-color: rgb(17, 255, 0);
+    margin-left: -15px;
+    border: 0;
+    cursor: pointer;
+    
+}
+
+ul li{
+    list-style: none;
+    flex: 1;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+    opacity: 30%;
+    
+
+}
+
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background: url('checked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+    opacity: 30%;
+    opacity: 100%;
+}
